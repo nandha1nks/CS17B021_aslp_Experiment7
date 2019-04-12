@@ -1,18 +1,18 @@
 main:
 	  addi $a0,$zero,3
 	  jal loop
-  	addi $a0,$v0,0
+  	  addi $a0,$v0,0
 	  li $v0, 1
 	  syscall
 	  li $v0, 10
-  	syscall
+  	  syscall
 
 loop:
 	  addi $sp,$sp,-12
 	  sw $s0,8($sp)
-  	sw $s1,4($sp)
+  	  sw $s1,4($sp)
 	  sw $ra,0($sp)
-    addi $s0,$a0,0
+    	  addi $s0,$a0,0
 	  li $v0,1
 	  addi $t0,$zero,2
 	  ble $s0,$t0,exit
