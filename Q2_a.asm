@@ -20,7 +20,7 @@ loop:
 	  jal loop
 	  addi $s1,$v0,0
 	  addi $a0,$s0,-2
-	  jal fib
+	  jal loop
 	  add $v0,$s1,$v0
 exit:
 	  lw $ra,0($sp)
