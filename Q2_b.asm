@@ -1,5 +1,5 @@
 main:
-  	addi $a0,$zero,7
+  	  addi $a0,$zero,7
 	  jal loop
 	  addi $a0,$v0,0
 	  li $v0,1
@@ -11,7 +11,7 @@ loop:
 	  addi $sp,$sp,-8
 	  sw $s0,4($sp)
 	  sw $ra,0($sp)
-    addi $s0,$a0,0
+    	  addi $s0,$a0,0
 	  li $v0,1
 	  addi $t0,$zero,1
 	  ble $s0,$t0,factexit
